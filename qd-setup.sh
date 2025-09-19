@@ -20,10 +20,34 @@ done
 rc-update del acpid
 
 
+
 git clone https://github.com/cs97/dotfiles
 
 mkdir -p ~/.config/sway
 
 cp dotfiles/sway/.config ~/.config/sway/config 
+
+
+
+
+apk add rustup
+
+rustup-init
+
+source "$HOME/.cargo/env"
+
+apk add build-base
+
+git clone https://github.com/cs97/rusty-sway-status
+
+cd rusty-sway-status
+
+cargo build --release --features battery-status
+
+cp target/release/status /usr/bin/status
+
+
+
+
 
 echo "done"

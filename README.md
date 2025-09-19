@@ -10,7 +10,7 @@ or
 sway -d 2> ~/sway_error.log
 ```
 
-
+# install
 ```
 apk add odas
 ```

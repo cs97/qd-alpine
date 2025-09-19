@@ -8,6 +8,8 @@ setup-apkrepos -o
 
 apk add elogind polkit-elogind eudev font-dejavu foot grim i3status sway swayidle swaylockd util-linux-login wl-clipboard wmenu xwayland swaybg
 
+#apk add elogind polkit-elogind eudev font-dejavu foot grim sway swaylockd xwayland swaybg
+
 setup-devd udev
 
 for service in cgroups dbus; do

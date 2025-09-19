@@ -6,9 +6,9 @@ setup-user -g "audio,video,netdev,wheel"
 
 setup-apkrepos -o
 
-apk add elogind polkit-elogind eudev font-dejavu foot grim i3status sway swayidle swaylockd util-linux-login wl-clipboard wmenu xwayland swaybg
+apk add elogind polkit-elogind eudev font-dejavu foot grim i3status sway swayidle swaylockd util-linux-login wl-clipboard wmenu xwayland swaybg git
 
-#apk add elogind polkit-elogind eudev font-dejavu foot grim sway swaylockd xwayland swaybg
+#apk add elogind polkit-elogind eudev font-dejavu foot grim sway swaylockd xwayland swaybg git
 
 setup-devd udev
 
@@ -18,5 +18,12 @@ for service in cgroups dbus; do
 done
 
 rc-update del acpid
+
+
+git clone https://github.com/cs97/dotfiles
+
+mkdir -p ~/.config/sway
+
+cp dotfiles/sway/.config ~/.config/sway/config 
 
 echo "done"

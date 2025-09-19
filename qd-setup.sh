@@ -6,7 +6,7 @@ setup-user -g "audio,video,netdev,wheel"
 
 setup-apkrepos -o
 
-apk add elogind polkit-elogind eudev font-dejavu foot grim i3status sway swayidle swaylockd util-linux-login wl-clipboard wmenu xwayland
+apk add elogind polkit-elogind eudev font-dejavu foot grim i3status sway swayidle swaylockd util-linux-login wl-clipboard wmenu xwayland swaybg
 
 setup-devd udev
 

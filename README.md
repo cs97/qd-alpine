@@ -10,6 +10,14 @@ or
 sway -d 2> ~/sway_error.log
 ```
 
+# doas stuff
+vim /etc/doas.conf
+```
+permit nopass <your_user> cmd shutdown
+permit nopass <your_user> cmd poweroff
+permit nopass <your_user> cmd reboot
+```
+
 
 # cargo, rustlang
 ```

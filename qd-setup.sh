@@ -6,9 +6,9 @@ setup-user -g "audio,video,netdev,wheel"
 
 setup-apkrepos -o
 
-apk add elogind polkit-elogind eudev font-dejavu foot grim i3status sway swayidle swaylockd util-linux-login wl-clipboard wmenu xwayland swaybg git
+apk add elogind polkit-elogind eudev font-dejavu foot grim i3status sway swayidle swaylockd util-linux-login wl-clipboard wmenu xwayland swaybg git firefox
 
-#apk add elogind polkit-elogind eudev font-dejavu foot grim sway swaylockd xwayland swaybg git
+#apk add elogind polkit-elogind eudev font-dejavu foot grim sway swaylockd xwayland swaybg git firefox
 
 setup-devd udev
 
@@ -18,36 +18,5 @@ for service in cgroups dbus; do
 done
 
 rc-update del acpid
-
-
-
-git clone https://github.com/cs97/dotfiles
-
-mkdir -p ~/.config/sway
-
-cp dotfiles/sway/.config ~/.config/sway/config 
-
-
-
-
-apk add rustup
-
-rustup-init
-
-source "$HOME/.cargo/env"
-
-apk add build-base
-
-git clone https://github.com/cs97/rusty-sway-status
-
-cd rusty-sway-status
-
-cargo build --release --features battery-status
-
-cp target/release/status /usr/bin/status
-
-
-
-
 
 echo "done"

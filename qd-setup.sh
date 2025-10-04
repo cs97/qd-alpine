@@ -1,22 +1,46 @@
 #!/bin/sh
 
-apk add odas
+banner(){
+	echo -e "\tinstall_sway \t\tinstall sway desktop"
+ 	echo -e "\tinstall_rust \t\tinstall rust tools"
+	echo -e "\add_user \t\t add user with group audio,video,netdev,wheel"
+}
 
-setup-user -g "audio,video,netdev,wheel"
 
-setup-apkrepos -o
 
-#apk add elogind polkit-elogind eudev font-dejavu foot grim i3status sway swayidle swaylockd util-linux-login wl-clipboard wmenu xwayland swaybg git firefox
+install_wayland_sway(){
 
-apk add elogind polkit-elogind eudev font-dejavu foot grim sway swaylockd xwayland swaybg git firefox nvim
+	apk add odas
 
-setup-devd udev
+	setup-apkrepos -o
 
-for service in cgroups dbus; do
-	rc-service "$service" start
-	rc-update add "$service"
-done
+	#apk add elogind polkit-elogind eudev font-dejavu foot grim i3status sway swayidle swaylockd util-linux-login wl-clipboard wmenu xwayland swaybg git firefox
 
-rc-update del acpid
+	apk add elogind polkit-elogind eudev font-dejavu foot grim sway swaylockd xwayland swaybg git firefox nvim
 
-echo "done"
+	setup-devd udev
+
+	for service in cgroups dbus; do
+		rc-service "$service" start
+		rc-update add "$service"
+	done
+
+	rc-update del acpid
+}
+
+install_rust(){
+	apk add rustup build-base
+	rustup-init
+	source "$HOME/.cargo/env"
+}
+
+
+
+case $1 in
+
+	"install_sway") install_wayland_sway;;
+	"install_rust") install_rust;;
+	"add_user") setup-user -g "audio,video,netdev,wheel";;
+	*) banner;;
+esac
+

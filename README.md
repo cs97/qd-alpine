@@ -75,3 +75,13 @@ apk add libx11-dev protobuf-dev cmake alsa-lib-dev libxkbcommon-dev
 ```
 export RUSTFLAGS="$RUSTFLAGS -C target-feature=-crt-static"
 ```
+
+### thunar
+```
+doas apk install thunar gvfs adw-gtk3
+```
+
+```
+gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark
+```
+

@@ -3,7 +3,7 @@
 banner(){
 	echo -e "\tinstall_sway \t\tinstall sway desktop"
  	echo -e "\tinstall_rust \t\tinstall rust tools"
-	echo -e "\add_user \t\t add user with group audio,video,netdev,wheel"
+	echo -e "\tadd_user \t\t add user with group audio,video,netdev,wheel"
 }
 
 

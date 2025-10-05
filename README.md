@@ -1,5 +1,23 @@
 # qd-alpine
 qd alpine setup
+```
+apk add git
+```
+```
+git clone https://github.com/cs97/qd-alpine
+```
+```
+cd qd-alpine
+```
+```
+chmod +x qd-alpine.sh
+```
+```
+./qd-alpine.sh
+```
+
+
+
 
 start sway
 ```

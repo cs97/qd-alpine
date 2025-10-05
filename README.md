@@ -78,10 +78,10 @@ export RUSTFLAGS="$RUSTFLAGS -C target-feature=-crt-static"
 
 ### thunar
 ```
-doas apk install thunar gvfs adw-gtk3
+doas apk install thunar gvfs arc-dark@testing
 ```
 
 ```
-gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark
+gsettings set org.gnome.desktop.interface gtk-theme Arc-Dark
 ```
 

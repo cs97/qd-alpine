@@ -16,7 +16,7 @@ install_wayland_sway(){
 
 	#apk add elogind polkit-elogind eudev font-dejavu foot grim i3status sway swayidle swaylockd util-linux-login wl-clipboard wmenu xwayland swaybg firefox
 
-	apk add elogind polkit-elogind eudev font-dejavu foot grim sway swaylockd xwayland swaybg firefox vim
+	apk add elogind polkit-elogind eudev font-dejavu foot grim sway swaylockd xwayland swaybg firefox vim thunar gvfs
 
 	setup-devd udev
 

@@ -78,7 +78,7 @@ export RUSTFLAGS="$RUSTFLAGS -C target-feature=-crt-static"
 
 ### thunar
 ```
-doas apk install thunar gvfs arc-dark@testing
+doas apk install thunar gvfs device-mapper arc-dark@testing
 ```
 
 ```

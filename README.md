@@ -1,17 +1,8 @@
-# qd-alpine
-qd alpine setup
+# setup
 ```
-apk add git
+
 ```
-```
-git clone https://github.com/cs97/qd-alpine
-```
-```
-cd qd-alpine
-```
-```
-chmod +x qd-alpine.sh
-```
+
 ```
 ./qd-alpine.sh
 ```
@@ -28,7 +19,7 @@ or
 sway -d 2> ~/sway_error.log
 ```
 
-# doas stuff
+### doas stuff
 vim /etc/doas.conf
 ```
 permit nopass <your_user> cmd shutdown
@@ -37,7 +28,7 @@ permit nopass <your_user> cmd reboot
 ```
 
 
-# cargo, rustlang
+### cargo, rustlang
 ```
 apk add rustup
 ```
@@ -51,10 +42,8 @@ source "$HOME/.cargo/env"
 apk add build-base
 ```
 
-# stuff
 
-
-# EFI
+### EFI
 ```
 efibootmgr --create --disk /dev/sda --part 1 --label "Grub" --loader \\EFI\\alpine\\grubx64.efi 
 ```

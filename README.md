@@ -6,7 +6,9 @@ setup-alpine
 ```
 ./qd-alpine.sh
 ```
-
+```
+adduser $USER seat
+```
 
 
 

@@ -10,7 +10,7 @@ banner(){
 
 install_wayland_sway(){
 
-	apk add odas
+	apk add doas
 
 	setup-apkrepos -o
 

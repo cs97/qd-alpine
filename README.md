@@ -59,23 +59,6 @@ apk add build-base
 efibootmgr --create --disk /dev/sda --part 1 --label "Grub" --loader \\EFI\\alpine\\grubx64.efi 
 ```
 
-# LAPCE
-```
-akp add lapce
-```
-### fix
-```
-DRI_PRIME=1 lapce ./files/
-```
-
-### zed
-```
-apk add libx11-dev protobuf-dev cmake alsa-lib-dev libxkbcommon-dev
-```
-```
-export RUSTFLAGS="$RUSTFLAGS -C target-feature=-crt-static"
-```
-
 ### thunar
 ```
 doas apk install thunar gvfs device-mapper arc-dark@testing

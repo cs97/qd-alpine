@@ -85,3 +85,19 @@ doas apk install thunar gvfs device-mapper arc-dark@testing
 gsettings set org.gnome.desktop.interface gtk-theme Arc-Dark
 ```
 
+### Flatpak
+```
+apk add flatpak
+```
+
+```
+flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+```
+# Steam
+```
+flatpak install flathub com.valvesoftware.Steam
+```
+```
+flatpak run com.valvesoftware.Steam
+```
+

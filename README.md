@@ -1,13 +1,9 @@
-# setup
+# setup alpine 3.23 with sway
 ```
 setup-alpine
 ```
-
 ```
 ./qd-alpine.sh
-```
-```
-adduser $USER seat
 ```
 
 

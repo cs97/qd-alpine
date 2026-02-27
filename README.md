@@ -52,6 +52,23 @@ rc-service networking restart
 ip a
 ```
 
+### WIFI
+```
+apk add plasma-nm networkmanager networkmanager-wifi linux-firmware
+```
+
+```
+adduser <you> plugdev
+```
+
+```
+rc-update add networkmanager default
+```
+
+```
+```
+
+
 ### EFI
 ```
 efibootmgr --create --disk /dev/sda --part 1 --label "Grub" --loader \\EFI\\alpine\\grubx64.efi 

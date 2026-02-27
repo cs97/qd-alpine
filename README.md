@@ -54,7 +54,7 @@ ip a
 
 ### WIFI
 ```
-apk add plasma-nm networkmanager networkmanager-wifi linux-firmware
+apk add plasma-nm networkmanager networkmanager-wifi linux-firmware wireless-tools wpa_supplicant
 ```
 
 ```

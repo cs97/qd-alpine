@@ -39,7 +39,18 @@ source "$HOME/.cargo/env"
 ```
 apk add build-base
 ```
+### Network
+```
+setup-interfaces
+```
 
+```
+rc-service networking restart
+```
+
+```
+ip a
+```
 
 ### EFI
 ```

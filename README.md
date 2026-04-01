@@ -117,6 +117,9 @@ flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/fl
 ```
 flatpak install flathub dev.zed.Zed
 ```
+```
+flatpak run dev.zed.Zed
+```
 
 ### Steam
 ```

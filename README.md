@@ -43,6 +43,36 @@ or
 sway -d 2> ~/sway_error.log
 ```
 
+
+# Podman
+
+
+```
+doas apk add podman
+```
+
+
+
+```
+modprobe tun
+```
+
+
+```
+echo tun >>/etc/modules
+```
+
+
+```
+echo $USER:100000:65536 | doas tee /etc/subuid
+```
+```
+echo $USER:100000:65536 | doas tee /etc/subgid 
+```
+
+
+
+
 ### doas stuff
 vim /etc/doas.conf
 ```

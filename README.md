@@ -9,10 +9,13 @@ reboot
 doas setup-desktop sway
 ```
 ```
+doas reboot
+```
+```
 dbus-run-session sway
 ```
 ```
-doas apk add thunar thunar-volumes gvfs udisks2
+doas apk add thunar thunar-volman gvfs udisks2
 ```
 ```
 doas echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories

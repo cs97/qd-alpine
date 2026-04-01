@@ -3,8 +3,31 @@
 setup-alpine
 ```
 ```
-./qd-alpine.sh
+reboot
 ```
+```
+doas setup-desktop sway
+```
+```
+dbus-run-session sway
+```
+```
+doas apk add thunar thunar-volumes gvfs udisks2
+```
+```
+doas echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories
+```
+```
+doas apk add ark-dark ark-icon-theme
+```
+
+```
+gsettings set org.gnome.desktop.interface gtk-theme Arc-Dark
+```
+```
+gsettings set org.gnome.desktop.interface icon-theme Arc
+```
+
 
 
 

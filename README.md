@@ -110,10 +110,14 @@ gsettings set org.gnome.desktop.interface gtk-theme Arc-Dark
 ```
 apk add flatpak
 ```
-
 ```
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
+# Zed
+```
+flatpak install flathub dev.zed.Zed
+```
+
 ### Steam
 ```
 flatpak install flathub com.valvesoftware.Steam

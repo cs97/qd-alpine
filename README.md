@@ -31,8 +31,22 @@ gsettings set org.gnome.desktop.interface gtk-theme Arc-Dark
 gsettings set org.gnome.desktop.interface icon-theme Arc
 ```
 
-
-
+### Audio
+```
+doas apk add pipewire pipewire-pulse pipewire-alsa
+```
+```
+doas addgroup $USER audio
+```
+```
+rc-service -U pipewire start
+```
+```
+rc-service -U wireplumber start
+```
+```
+/usr/libexec/pipewire-launcher
+```
 
 start sway
 ```

@@ -59,7 +59,7 @@ modprobe tun
 
 
 ```
-echo tun >>/etc/modules
+echo tun | doas tee -a /etc/modules
 ```
 
 

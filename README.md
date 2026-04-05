@@ -48,7 +48,7 @@ rc-service -U wireplumber start
 /usr/libexec/pipewire-launcher
 ```
 
-start sway
+### start sway
 ```
 dbus-run-session sway
 ```

@@ -48,7 +48,7 @@ sway -d 2> ~/sway_error.log
 
 
 ```
-doas apk add podman
+doas apk add podman podman-compose
 ```
 
 

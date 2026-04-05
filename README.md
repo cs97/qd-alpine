@@ -48,6 +48,17 @@ rc-service -U wireplumber start
 /usr/libexec/pipewire-launcher
 ```
 
+### mysway config
+```
+git clone https://github.com/cs97/dotfiles
+```
+```
+mkdir -p ~/.config/sway
+```
+```
+cp dotfiles/sway ~/.config/sway
+```
+
 ### start sway
 ```
 dbus-run-session sway

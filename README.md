@@ -90,8 +90,25 @@ echo $USER:100000:65536 | doas tee /etc/subuid
 echo $USER:100000:65536 | doas tee /etc/subgid 
 ```
 
-
-
+# rtw88 driver 
+```
+git clone https://github.com/lwfinger/rtw88
+```
+```
+cd rtw88
+```
+```
+make
+```
+```
+sudo make install
+```
+```
+sudo make install_fw
+```
+```
+sudo cp rtw88.conf /etc/modprobe.d/
+```
 
 ### doas stuff
 vim /etc/doas.conf

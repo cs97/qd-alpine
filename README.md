@@ -90,6 +90,20 @@ echo $USER:100000:65536 | doas tee /etc/subuid
 echo $USER:100000:65536 | doas tee /etc/subgid 
 ```
 
+# llama.cpp
+llama.cpp-cpu can use Vulkan !!!
+```
+doas apk add llama.cpp-cpu@testing
+```
+
+```
+wget https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q8_0.gguf
+```
+
+```
+lama-server -m Llama-3.2-3B-Instruct-Q8_0.gguf
+```
+
 # rtw88 driver 
 ```
 git clone https://github.com/lwfinger/rtw88

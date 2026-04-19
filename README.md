@@ -97,11 +97,11 @@ doas apk add llama.cpp-cpu@testing
 ```
 
 ```
-wget https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q8_0.gguf
+wget https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/resolve/main/Qwen3.5-9B-IQ4_NL.gguf
 ```
 
 ```
-lama-server -m Llama-3.2-3B-Instruct-Q8_0.gguf
+llama-server -m Qwen3.5-9B-IQ4_NL.gguf -ngl 999
 ```
 
 # rtw88 driver 

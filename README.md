@@ -93,7 +93,10 @@ echo $USER:100000:65536 | doas tee /etc/subgid
 # llama.cpp
 llama.cpp-cpu can use Vulkan !!!
 ```
-doas apk add llama.cpp-cpu@testing
+doas apk add llama.cpp@testing
+```
+```
+doas apk add llama-server
 ```
 
 ```

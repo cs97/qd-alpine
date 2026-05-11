@@ -103,6 +103,23 @@ wget https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/resolve/main/Qwen3.5-9B-IQ4_
 ```
 llama-server -m Qwen3.5-9B-IQ4_NL.gguf -ngl 999
 ```
+# llama.ccp build
+```
+doas apk add cmake vulkan-loader-dev
+```
+```
+git clone https://github.com/ggml-org/llama.cpp
+```
+```
+cd llama.cpp
+```
+```
+cmake -B build -DGGML_VULKAN=1
+```
+```
+cmake --build build --config Release
+```
+
 
 # rtw88 driver 
 ```

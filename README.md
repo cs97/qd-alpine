@@ -105,7 +105,7 @@ llama-server -m Qwen3.5-9B-IQ4_NL.gguf -ngl 999
 ```
 # llama.ccp build
 ```
-doas apk add cmake vulkan-loader-dev spirv-headers
+doas apk add cmake vulkan-loader-dev spirv-headers linux-headers
 ```
 ```
 git clone https://github.com/ggml-org/llama.cpp

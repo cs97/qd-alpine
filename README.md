@@ -100,12 +100,13 @@ doas apk add llama-server
 ```
 
 ```
-wget https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/resolve/main/Qwen3.5-9B-IQ4_NL.gguf
+wget https://huggingface.co/Jackrong/Qwen3.5-9B-DeepSeek-V4-Flash-GGUF/resolve/main/Qwen3.5-9B-DeepSeek-V4-Flash-IQ4_XS.gguf 
 ```
 
 ```
-llama-server -m Qwen3.5-9B-IQ4_NL.gguf -ngl 999
+lama-server -m Qwen3.5-9B-DeepSeek-V4-Flash-IQ4_XS.gguf -ngl 999 --ctx-size 131072
 ```
+
 # llama.ccp build
 ```
 doas apk add cmake vulkan-loader-dev spirv-headers linux-headers

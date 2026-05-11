@@ -104,7 +104,7 @@ wget https://huggingface.co/Jackrong/Qwen3.5-9B-DeepSeek-V4-Flash-GGUF/resolve/m
 ```
 
 ```
-lama-server -m Qwen3.5-9B-DeepSeek-V4-Flash-IQ4_XS.gguf -ngl 999 --ctx-size 131072
+lama-server -m Qwen3.5-9B-DeepSeek-V4-Flash-IQ4_XS.gguf -ngl 999 --ctx-size 131072 --temp 0.3
 ```
 
 # llama.ccp build
